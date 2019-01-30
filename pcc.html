@@ -23,10 +23,14 @@
 			return timestamp;
 		}
 		
-		setCookie('login_check_sTime', getNowTimestamp(), 10);
-		setCookie('signOnKey', '00-066/lL0zvpqW3X3K+ktQDHfwz34fPSWX/pfc4r3SNPmmhg-' + getNowTimestamp(), 10);
-		setCookie('simulatedMode', 'N', 10);
-		setCookie('substitutedMode', 'N', 10);
+
+		setTimeout(function() {
+			setCookie('login_check_sTime', getNowTimestamp(), 10);
+			setCookie('signOnKey', '00-066/lL0zvpqW3X3K+ktQDHfwz34fPSWX/pfc4r3SNPmmhg-' + getNowTimestamp(), 10);
+			setCookie('simulatedMode', 'N', 10);
+			setCookie('substitutedMode', 'N', 10);
+		}, 1000);
+		
 	</script>
 </body>
 </html>
