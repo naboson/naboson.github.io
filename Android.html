@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=utf-8 />
+        
+        <title>測試串流影片 on Android</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>    
+        <script src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>
+    </head>
+    <body>
+        <video id="videoPlayer" controls></video>
+        <script>
+            <!--setup the video element and attach it to the Dash player-->
+            function play() {
+                alert("!!!");
+                var url = "https://d1rpqnqor3hqa8.cloudfront.net/test012/Android/test-001.mpd";
+                var player = dashjs.MediaPlayer().create();
+                player.initialize(document.querySelector("#videoPlayer"), url, true);
+            };
+            play();
+        </script>
+  </body>
+</html>
+
