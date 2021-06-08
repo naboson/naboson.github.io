@@ -13,7 +13,6 @@
         <script>
             <!--setup the video element and attach it to the Dash player-->
             function play() {
-                alert("!!!");
                 var url = "https://d1rpqnqor3hqa8.cloudfront.net/test012/Android/test-001.mpd";
                 var player = dashjs.MediaPlayer().create();
                 player.initialize(document.querySelector("#videoPlayer"), url, true);
